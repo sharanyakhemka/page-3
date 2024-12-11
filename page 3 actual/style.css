@@ -1,0 +1,125 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #000;
+    padding-top: 60px; /* Space for fixed header */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+header a:hover {
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+}
+
+.container {
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Form Styling */
+form {
+    margin-bottom: 2rem;
+}
+
+textarea, input {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: none;
+}
+
+button {
+    background-color: #000000;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c90000;
+}
+
+/* Letter Preview */
+.letter-preview {
+    position: relative;
+    background-color: #f0e5d8;
+    color: #000;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s ease;
+}
+
+.letter-text {
+    margin: 0;
+}
+
+/* Randomized Colors */
+.letter-preview:nth-child(1) {
+    background-color: #fef3c7;
+}
+
+.letter-preview:nth-child(2) {
+    background-color: #fde68a;
+}
+
+.letter-preview:nth-child(3) {
+    background-color: #fbcfe8;
+}
+
+.letter-preview:nth-child(4) {
+    background-color: #e9d5ff;
+}
+
+.letter-preview:nth-child(5) {
+    background-color: #bee3f8;
+}
+
+.letter-preview:nth-child(6) {
+    background-color: #a7f3d0;
+}

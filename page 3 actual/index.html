@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOST IN THE MAIL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a id="back" href="#">BACK</a>
+    <a id="home" href="#">LOST IN BETWEEN</a>
+    <a id="next" href="#">NEXT</a>
+</header>
+    <div class="container">
+        <h1>Write Your Anonymous Letter</h1>
+        <form id="letterForm">
+            <textarea id="letterContent" placeholder="Write your letter here..." required></textarea>
+            <input type="email" id="recipientEmail" placeholder="Recipient's Email" required>
+            <button type="submit">Send Anonymously</button>
+        </form>
+        <div id="preview" class="letter-preview">
+            <p class="letter-text">Your letter will look like this...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
